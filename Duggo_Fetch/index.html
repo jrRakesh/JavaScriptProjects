@@ -253,6 +253,14 @@
       // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
       // return the breed name string as formatted in the breed list, e.g. "standard poodle"
       function getBreedFromURL(url) {
+        const parts = url.split("/");
+        const breedPart = parts[parts.indexOf("breeds") + 1];
+        const breedComponents = breedPart.split("-");
+        if (breedComponents.length === 1) {
+          return breedComponents[0];
+        } else if (breedComponents.length === 2) {
+          return `${breedComponents[1]} ${breedComponents[0]}`;
+        }
         // The string method .split(char) may come in handy
         // Try to use destructuring as much as you can
       }
