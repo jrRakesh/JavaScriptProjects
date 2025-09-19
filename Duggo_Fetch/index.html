@@ -297,9 +297,14 @@
         // For each of the choices in choicesArray,
         for(let choice of choicesArray){
         // Create a button element whose name, value, and textContent properties are the value of that choice,
-        
+        let button = document.createElement("button");
+        button.textContent = choice;
+        button.name = choice;
+        button.value = choice;
         // attach a "click" event listener with the buttonHandler function,
+        button = addEventListener("click", buttonHandler)
         // and append the button as a child of the options element
+        options.appendChild(button);
         }
       }
 
@@ -330,7 +335,9 @@
 
       // TODO 5
       // Asynchronously call the loadQuizData() function,
+      const [imageUrl, correctAnswer, choices] = await loadQuizData();
       // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
+      renderQuiz(imageUrl, correctAnswer, choices);
     </script>
 
     <iframe
