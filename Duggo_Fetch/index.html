@@ -271,7 +271,7 @@
       // finally return the "message" property of its body
       async function fetchMessage(url) {
         const urlResource = await fetch(url);
-        const parsedResource = urlResource.json();
+        const parsedResource = await urlResource.json();
         const {message} = parsedResource;
         return message;
       }
@@ -302,7 +302,7 @@
         button.name = choice;
         button.value = choice;
         // attach a "click" event listener with the buttonHandler function,
-        button = addEventListener("click", buttonHandler)
+        button.addEventListener("click", buttonHandler);
         // and append the button as a child of the options element
         options.appendChild(button);
         }
