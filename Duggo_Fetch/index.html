@@ -269,7 +269,12 @@
       // Given a URL, fetch the resource at that URL,
       // then parse the response as a JSON object,
       // finally return the "message" property of its body
-      async function fetchMessage(url) {}
+      async function fetchMessage(url) {
+        const urlResource = await fetch(url);
+        const parsedResource = urlResource.json();
+        const {message} = parsedResource;
+        return message;
+      }
 
       // Function to add the multiple-choice buttons to the page
       function renderButtons(choicesArray, correctAnswer) {
@@ -290,9 +295,12 @@
 
         // TODO 4
         // For each of the choices in choicesArray,
+        for(let choice of choicesArray){
         // Create a button element whose name, value, and textContent properties are the value of that choice,
+        
         // attach a "click" event listener with the buttonHandler function,
         // and append the button as a child of the options element
+        }
       }
 
       // Function to add the quiz content to the page
