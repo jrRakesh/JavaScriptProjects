@@ -22,3 +22,6 @@ html, body {
     height: 200px;
     border: 1px solid black;
 }
+#center p {
+  margin: 0;
+}
