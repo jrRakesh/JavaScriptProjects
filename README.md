@@ -2,7 +2,8 @@
 
 Live demos (GitHub Pages):
 
-- [ageCalculator](https://jrRakesh.github.io/JavaScriptProjects/ageCalculator/)
+- [Age Calculator](https://jrRakesh.github.io/JavaScriptProjects/ageCalculator/)
 - [jsQuiz](https://jrRakesh.github.io/JavaScriptProjects/jsQuiz/)
-- [Duggo_Fetch](https://jrRakesh.github.io/JavaScriptProjects/Duggo_Fetch/)
-- [colorChangingRectangle](https://jrRakesh.github.io/JavaScriptProjects/colorChangingRectangle/)
+- [Duggo Fetch](https://jrRakesh.github.io/JavaScriptProjects/Duggo_Fetch/)
+- [Color Changing Rectangle](https://jrRakesh.github.io/JavaScriptProjects/colorChangingRectangle/)
+- [Notes App](https://jrRakesh.github.io/JavaScriptProjects/notesApp/)
