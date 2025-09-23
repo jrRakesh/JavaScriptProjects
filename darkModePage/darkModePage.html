@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)https://anjana.dev/vanilla-js-projects/dark-mode/index.html -->
+
 <html data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	
@@ -32,14 +32,21 @@
 			<main id="darklight"></main>
 
 		</article>
-	</main>
+	</main>;
 
 	<footer>
 
 
 	</footer>
 	<script id="theme.js">
-
+		let toggle = document.querySelector("#toggle");
+		toggle.addEventListener("change",(e) => {
+			if(document.documentElement.dataset.theme === "dark"){
+				document.documentElement.setAttribute('data-theme', 'light');
+			} else if (document.documentElement.dataset.theme === "light"){
+				document.documentElement.setAttribute('data-theme', 'dark');
+			}
+		})
 	</script>
 
 
