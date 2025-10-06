@@ -1,0 +1,18 @@
+body{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.banner{
+    margin-top: 20%;
+}
+.time{
+    text-align: center;
+    color: black;
+    height: 60px;
+    width: 110px;
+    background-color: goldenrod;
+}
+    

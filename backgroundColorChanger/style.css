@@ -1,0 +1,30 @@
+*{
+    margin: 50px;
+}
+h1{
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+.button{
+    border: 1px solid;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+#grey{
+    background-color: grey;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+#white{
+    background-color: white;
+}
