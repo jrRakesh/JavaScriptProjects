@@ -11,3 +11,4 @@ Live demos (GitHub Pages):
 - [Digital_Clock](https://jrRakesh.github.io/JavaScriptProjects/Digital_Clock/)
 - [BMI_Calculator](https://jrRakesh.github.io/JavaScriptProjects/BMI_Calculator/)
 - [GuessTheNumber](https://jrRakesh.github.io/JavaScriptProjects/GuessTheNumber/)
+- [WeatherApp](https://jrRakesh.github.io/JavaScriptProjects/weatherApp/)
