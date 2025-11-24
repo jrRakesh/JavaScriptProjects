@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
         results.innerHTML = `Please Enter Valid weight`;
     } else {
         let status
-        const bmi = ((weight/(height*height))*1000).toFixed(2)
+        const bmi = ((weight/(height*height))*10000).toFixed(2)
         if (bmi < 18.6){
             status = "Need to gain some weight!"
         } else if (bmi > 24.9 ){
@@ -24,3 +24,4 @@ form.addEventListener("submit", (e) => {
         results.innerHTML = `Your BMI weight is : ${bmi} <br>${status}`;
     }
 })
+
